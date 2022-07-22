@@ -523,7 +523,6 @@ except KeyError:
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'Z-Mirror'
 except KeyError:
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
