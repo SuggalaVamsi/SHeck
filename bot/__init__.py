@@ -272,7 +272,7 @@ try:
         raise KeyError
     TG_SPLIT_SIZE = int(TG_SPLIT_SIZE)
 except:
-    TG_SPLIT_SIZE = tgBotMaxFileSize
+    TG_SPLIT_SIZE = 4194304000
 try:
     USER_SESSION_STRING = getConfig('USER_SESSION_STRING')
     if len(USER_SESSION_STRING) == 0:
@@ -386,7 +386,7 @@ try:
         raise KeyError
     LEECH_LIMIT = float(LEECH_LIMIT)
 except:
-    LEECH_LIMIT = None
+    LEECH_LIMIT = 4194304000
 try:
     RSS_DELAY = getConfig('RSS_DELAY')
     if len(RSS_DELAY) == 0:
